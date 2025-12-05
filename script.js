@@ -14,13 +14,16 @@ function ToggleMode() {
 function initializeTheme() {
   const html = document.documentElement
   const savedTheme = localStorage.getItem("theme")
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matchesF
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+
   if (savedTheme === "light") {
     html.classList.add("light")
   } else if (savedTheme === "dark") {
     html.classList.remove("light")
-  } else if (!prefersDark) {
-    html.classList.add("light")
+  } else if (prefersDark) {
+    html.classList.remove("light")
+  } else {
+    html.classList.remove("light")
   }
 }
 
