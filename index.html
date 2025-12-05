@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Todos os links de @danits.dev em um só lugar"
+    />
+    <title>Links - danits.dev</title>
+    <link rel="icon" href="assets/link.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/link.png" sizes="180x180" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div
+        id="switch"
+        onclick="ToggleMode()"
+        role="switch"
+        aria-checked="false"
+        tabindex="0"
+        aria-label="Alternar tema"
+      >
+        <button></button><span></span>
+      </div>
+      <div id="profile">
+        <img src="assets/avatar.jpg" alt="Avatar de @danits.dev" />
+        <p>@danits.dev</p>
+        <span class="description">BackEnd Developer</span>
+      </div>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a>
+        </li>
+        <li>
+          <a href="https://github.com/danits-dev?tabs=repositories" target="_blank" rel="noopener noreferrer">Veja meus repositórios</a>
+        </li>
+      </ul>
+      <div id="social-links">
+        <a
+          href="https://github.com/danits-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://instagram.com/danits.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/daniel-telecken-sch%C3%A4fer-106404177/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito com <ion-icon name="heart" aria-label="amor"></ion-icon> por
+        <a
+          href="https://github.com/danits-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Danits</a
+        >
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
